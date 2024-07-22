@@ -1,0 +1,27 @@
+select empni,ename,job,sal from emp where sal=3000;
+select empno,ename,job,hiredate from emp where hiredate <= '1981-10-01';
+select empno,ename,job,sal from emp where sal<>3100;
+select empno,ename,job,sal from emp where sal 1= 3100;
+select ename,job,sal from emp where job ='MANAger';
+select ename,job,sal,hiredate from emp where hirdate > '1981-12-31';
+select * from emp where sal between 2000 and 3000;
+Logical Operator 
+AND,OR,NOT
+select * from emp where sal < 2000 and job = 'CLErk';
+select * from emp where sal < 2000 and job="clerk";
+select * from emp where sal < 3000 and (job='ClERK' or deptno=10);
+selcet ename, hiredate fro  emp where hiredate not between '1981-01-01' and '1982-12-31';
+select ename,job,sal from emp where job in('Clerk','salesman','analyst');
+select ename,job,deptno from emp where deptno not in(10,20);
+select * from emp where comm is not null;
+Wild Characters pattern matching ,regular expressions
+% -Means any character and any no of characters 
+_-Means any character and single character
+selet ename from emp where ename like 'S%';
+select ename from emp where ename like 'S___';
+selecr ename from emp where ename like '_A%';
+slect ename from emp where ename 
+Sorting 
+select * from emp order by ename;
+select ename,sal from emp order by sal;
+select ename,sal
